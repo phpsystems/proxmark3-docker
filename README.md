@@ -7,7 +7,7 @@ When I run this container locally, the options I use are:
 ```
 # docker build -t proxmark3 .
 
-#docker run -it --rm \
+# docker run -it --rm \
    --privileged \
    -e DISPLAY=$DISPLAY \
    -v $HOME/Downloads:/opt/proxmark3/Data \
