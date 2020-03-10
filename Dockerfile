@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER TimW <pm3docker@secopsconsulting.com> 
+MAINTAINER TimW <pm3docker@php-systems.com> 
 
 WORKDIR /opt
 
