@@ -25,7 +25,7 @@ WORKDIR /opt/proxmark3
 
 COPY 77-mm-usb-device-blacklist.rules /etc/udev/rules.d/
 COPY start.sh /opt/proxmark3/
-chmod u+x $HOME/start.sh
+RUN chmod u+x $HOME/start.sh
 
 
 CMD ["/bin/bash"] 
