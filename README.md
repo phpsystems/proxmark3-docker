@@ -12,3 +12,4 @@ docker run -it --rm \
 -v /dev:/dev \
 --name proxmark3 \
 secopsconsult/proxmark3:2.0.0
+
