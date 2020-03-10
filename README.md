@@ -11,5 +11,18 @@ docker run -it --rm \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
 -v /dev:/dev \
 --name proxmark3 \
-secopsconsult/proxmark3:2.0.0
+proxmark3:latest
+
+
+or when I get around to docker hub:
+
+docker run -it --rm \
+--privileged \
+-e DISPLAY=$DISPLAY \
+-v $HOME/Downloads:/opt/proxmark3/Data \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+-v /dev:/dev \
+--name proxmark3 \
+phpsystems/proxmark3:2.0.0
+
 
