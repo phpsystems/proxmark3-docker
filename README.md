@@ -13,6 +13,7 @@ When I run this container locally, the options I use are:
    -v $HOME/Downloads:/opt/proxmark3/Data \
    -v /tmp/.X11-unix:/tmp/.X11-unix \
    -v /dev:/dev \
+   -v /run/udev:/run/udev:ro \
    --name proxmark3 \
    proxmark3
 ```
@@ -25,6 +26,7 @@ or when I get around to docker hub:
    -v $HOME/Downloads:/opt/proxmark3/Data \
    -v /tmp/.X11-unix:/tmp/.X11-unix \
    -v /dev:/dev \
+   -v /run/udev:/run/udev:ro \
    --name proxmark3 \
    secopsconsult/proxmark3
 ```

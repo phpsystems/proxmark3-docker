@@ -16,7 +16,7 @@ RUN apt-get clean &&  \
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y git build-essential libreadline5 libreadline-dev \
                     libncurses5-dev libusb-0.1-4 libusb-dev libqt4-dev perl \
-                    pkg-config wget gcc-arm-none-eabi usbutils nano  
+                    pkg-config wget gcc-arm-none-eabi usbutils nano udev 
 
 RUN git clone --depth=1 https://github.com/RfidResearchGroup/proxmark3.git && cd proxmark3 && make all
 
