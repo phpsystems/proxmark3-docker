@@ -26,6 +26,6 @@ or when I get around to docker hub:
    -v /tmp/.X11-unix:/tmp/.X11-unix \
    -v /dev:/dev \
    --name proxmark3 \
-   phpsystems/proxmark3:2.0.0
+   secopsconsult/proxmark3:latest
 ```
 
