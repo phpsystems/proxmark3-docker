@@ -14,7 +14,7 @@ When I run this container locally, the options I use are:
    -v /tmp/.X11-unix:/tmp/.X11-unix \
    -v /dev:/dev \
    --name proxmark3 \
-   proxmark3:2.0.0
+   proxmark3
 ```
 
 or when I get around to docker hub:
@@ -26,6 +26,6 @@ or when I get around to docker hub:
    -v /tmp/.X11-unix:/tmp/.X11-unix \
    -v /dev:/dev \
    --name proxmark3 \
-   secopsconsult/proxmark3:2.0.0
+   secopsconsult/proxmark3
 ```
 
