@@ -26,6 +26,6 @@ WORKDIR /opt/proxmark3
 COPY 77-mm-usb-device-blacklist.rules /etc/udev/rules.d/
 COPY start.sh /opt/proxmark3/
 RUN chmod u+x $HOME/start.sh
-
+run echo "export QT_X11_NO_MITSHM=1" >> ~/.bashrc && chmod u+x ~/.bashrc
 
 CMD ["/bin/bash"] 
